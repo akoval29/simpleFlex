@@ -46,15 +46,16 @@ body {
       border: 2px solid #810505;
       padding: 15px;
 
+      //rules for flex inside
       display: flex;
       flex-direction: column;
 
-      .nav p {
+      // navigation content
+      p {
         margin: 10px 0;
         justify-content: center;
         align-items: center;
       }
-      
 
     }
 
@@ -78,9 +79,13 @@ body {
         height: $nav-links-height;
         max-width: 100%;
 
-        // for inner nav content
+        // for inner nav and links content
         flex-direction: row;  
         justify-content: space-between;
+        // fix for navigation content
+        p {
+          margin: 0;
+        }
 
       }
       .main {
