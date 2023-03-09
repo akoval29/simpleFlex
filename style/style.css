@@ -13,18 +13,18 @@ body {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
-body header {
+body #page-header {
+  font-size: 26px;
   position: fixed;
   height: 100px;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   border: 2px solid #051c81;
   background-color: #1a16f5;
-  color: #fff;
   z-index: 1;
 }
 body .container {
@@ -33,7 +33,6 @@ body .container {
   margin-top: 100px;
   margin-bottom: 100px;
   height: calc(100vh - 200px);
-  overflow: auto;
 }
 body .container .nav {
   flex-basis: 100%;
@@ -65,12 +64,12 @@ body .container .links {
     max-width: 100%;
   }
 }
-body .footer {
+body #page-footer {
+  font-size: 26px;
   position: fixed;
   height: 100px;
+  width: 100%;
   bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
