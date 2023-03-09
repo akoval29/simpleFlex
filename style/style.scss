@@ -16,7 +16,6 @@ body {
   flex-direction: column;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 
   #page-header {
     font-size: $font-size;
@@ -46,6 +45,17 @@ body {
       background-color: red;
       border: 2px solid #810505;
       padding: 15px;
+
+      display: flex;
+      flex-direction: column;
+
+      .nav p {
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+      }
+      
+
     }
 
     .main {
@@ -67,6 +77,11 @@ body {
       .nav, .links {
         height: $nav-links-height;
         max-width: 100%;
+
+        // for inner nav content
+        flex-direction: row;  
+        justify-content: space-between;
+
       }
       .main {
         height: $main-height;
