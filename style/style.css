@@ -31,7 +31,7 @@ body header {
 body section {
   display: flex;
   flex-wrap: wrap;
-  height: calc(100% - 100px);
+  flex: 1;
 }
 body section nav {
   flex-basis: 100%;
@@ -59,17 +59,21 @@ body section aside {
   padding: 15px;
 }
 @media screen and (max-width: 730px) {
-  body section nav, body section aside {
+  body section nav {
     height: 50px;
     max-width: 100%;
     flex-direction: row;
     justify-content: space-around;
   }
-  body section nav p, body section aside p {
+  body section nav p {
     margin: 0;
   }
   body section nav h3 {
     display: none;
+  }
+  body section aside {
+    height: 50px;
+    max-width: 100%;
   }
   body section .main {
     height: calc(100% - 100px);

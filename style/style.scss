@@ -37,7 +37,7 @@ body {
   section {
     display: flex;
     flex-wrap: wrap;
-    height: $main-height;
+    flex: 1;
 
     nav {
       flex-basis: 100%;
@@ -72,7 +72,7 @@ body {
     }
 
     @media screen and (max-width: 730px) {
-      nav, aside {
+      nav {
         height: $nav-links-height;
         max-width: 100%;
         // for inner nav and links content
@@ -82,11 +82,14 @@ body {
         p {
           margin: 0; 
         }
-      }
-      nav{
         h3{
           display: none;
         }
+      }
+
+        aside {
+        height: $nav-links-height;
+        max-width: 100%;
       }
 
       .main {
