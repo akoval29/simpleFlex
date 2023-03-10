@@ -12,7 +12,10 @@ body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
 }
-body #page-header {
+body h3 {
+  margin-bottom: 20px;
+}
+body header {
   font-size: 26px;
   position: fixed;
   height: 100px;
@@ -26,14 +29,14 @@ body #page-header {
   background-color: #1a16f5;
   z-index: 1;
 }
-body .container {
+body section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 100px;
   height: calc(100vh - 200px);
 }
-body .container .nav {
+body section nav {
   flex-basis: 100%;
   max-width: 20%;
   background-color: red;
@@ -42,18 +45,18 @@ body .container .nav {
   display: flex;
   flex-direction: column;
 }
-body .container .nav p {
+body section nav p {
   margin: 10px 0;
   justify-content: center;
   align-items: center;
 }
-body .container .main {
+body section .main {
   flex-basis: 100%;
   max-width: 60%;
   background-color: #fff;
   padding: 15px;
 }
-body .container .links {
+body section aside {
   flex-basis: 100%;
   max-width: 20%;
   background-color: purple;
@@ -61,21 +64,21 @@ body .container .links {
   padding: 15px;
 }
 @media screen and (max-width: 730px) {
-  body .container .nav, body .container .links {
+  body section nav, body section aside {
     height: 50px;
     max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
-  body .container .nav p, body .container .links p {
+  body section nav p, body section aside p {
     margin: 0;
   }
-  body .container .main {
+  body section .main {
     height: calc(100% - 100px);
     max-width: 100%;
   }
 }
-body #page-footer {
+body footer {
   font-size: 26px;
   position: fixed;
   height: 100px;
