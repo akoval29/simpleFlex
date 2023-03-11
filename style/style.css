@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
+@import url("normalize.css");
 body {
   display: flex;
   flex-direction: column;
@@ -42,7 +36,7 @@ body section nav {
   flex-direction: column;
 }
 body section nav p {
-  margin: 10px 0;
+  margin: 10px 10px;
   justify-content: center;
   align-items: center;
 }
@@ -76,7 +70,7 @@ body section aside {
     max-width: 100%;
   }
   body section .main {
-    height: calc(100% - 100px);
+    height: calc(100% - (100px));
     max-width: 100%;
   }
 }
@@ -91,4 +85,26 @@ body footer {
   align-items: center;
   background-color: #2bac0b;
   color: #fff;
+}
+@media screen and (max-width: 730px) {
+  body nav {
+    height: 50px;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body nav p {
+    margin: 0;
+  }
+  body nav h3 {
+    display: none;
+  }
+  body aside {
+    height: 50px;
+    max-width: 100%;
+  }
+  body .main {
+    height: calc(100% - (100px));
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

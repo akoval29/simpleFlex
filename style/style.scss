@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("normalize.css");
 
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-$nav-links-height: 50px;
-$main-height: calc(100% - #{$nav-links-height * 2});
-$font-size: 26px;
+$h: 50px;
+$section-h: calc(100% - (#{$h * 2}));
+$fz: 26px;
 
 body {
   display: flex;
@@ -22,7 +16,7 @@ body {
   }
 
   header {
-    font-size: $font-size;
+    font-size: $fz;
     flex-basis: 100%;
     max-height: 10%;
     top: 0;
@@ -48,10 +42,8 @@ body {
       //rules for flex inside
       display: flex;
       flex-direction: column;
-
-      // navigation content
       p {
-        margin: 10px 0;
+        margin: 10px 10px;
         justify-content: center;
         align-items: center;
       }
@@ -73,12 +65,11 @@ body {
 
     @media screen and (max-width: 730px) {
       nav {
-        height: $nav-links-height;
+        height: $h;
         max-width: 100%;
         // for inner nav and links content
         flex-direction: row;  
         justify-content: space-around;
-        // fix for navigation content (still inner)
         p {
           margin: 0; 
         }
@@ -88,19 +79,19 @@ body {
       }
 
         aside {
-        height: $nav-links-height;
+        height: $h;
         max-width: 100%;
       }
 
       .main {
-        height: $main-height;
+        height: $section-h;
         max-width: 100%;
       }
     }
   }
 
   footer {
-    font-size: $font-size;
+    font-size: $fz;
     flex-basis: 100%;
     max-height: 10%;
     width: 100%;
@@ -110,5 +101,31 @@ body {
     align-items: center;
     background-color: #2bac0b;
     color: #fff;
+  }
+
+  @media screen and (max-width: 730px) {
+    nav {
+      height: $h;
+      max-width: 100%;
+      // for inner nav and aside content
+      flex-direction: row;  
+      justify-content: space-around;
+      p {
+        margin: 0; 
+      }
+      h3{
+        display: none;
+      }
+    }
+
+      aside {
+      height: $h;
+      max-width: 100%;
+    }
+
+    .main {
+      height: $section-h;
+      max-width: 100%;
+    }
   }
 }
