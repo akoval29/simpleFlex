@@ -65,12 +65,12 @@ body section aside {
   body section nav h3 {
     display: none;
   }
-  body section aside {
-    height: 50px;
-    max-width: 100%;
-  }
   body section .main {
     height: calc(100% - (100px));
+    max-width: 100%;
+  }
+  body section aside {
+    height: 50px;
     max-width: 100%;
   }
 }
@@ -85,26 +85,4 @@ body footer {
   align-items: center;
   background-color: #2bac0b;
   color: #fff;
-}
-@media screen and (max-width: 730px) {
-  body nav {
-    height: 50px;
-    max-width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  body nav p {
-    margin: 0;
-  }
-  body nav h3 {
-    display: none;
-  }
-  body aside {
-    height: 50px;
-    max-width: 100%;
-  }
-  body .main {
-    height: calc(100% - (100px));
-    max-width: 100%;
-  }
 }/*# sourceMappingURL=style.css.map */

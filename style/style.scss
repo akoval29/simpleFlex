@@ -77,14 +77,12 @@ body {
           display: none;
         }
       }
-
-        aside {
-        height: $h;
-        max-width: 100%;
-      }
-
       .main {
         height: $section-h;
+        max-width: 100%;
+      }
+        aside {
+        height: $h;
         max-width: 100%;
       }
     }
@@ -101,31 +99,5 @@ body {
     align-items: center;
     background-color: #2bac0b;
     color: #fff;
-  }
-
-  @media screen and (max-width: 730px) {
-    nav {
-      height: $h;
-      max-width: 100%;
-      // for inner nav and aside content
-      flex-direction: row;  
-      justify-content: space-around;
-      p {
-        margin: 0; 
-      }
-      h3{
-        display: none;
-      }
-    }
-
-      aside {
-      height: $h;
-      max-width: 100%;
-    }
-
-    .main {
-      height: $section-h;
-      max-width: 100%;
-    }
   }
 }
